@@ -38,7 +38,11 @@ const RecipeDetails = () => {
         <h1 className="text-4xl font-bold text-gray-800 mb-4">{recipe.title}</h1>
         {recipe.image && (
           <img
-            src={recipe.image}
+            src={
+              recipe.image
+                ? `${import.meta.env.VITE_API_BASE_URL}/${recipe.image}`
+                : ''
+            }
             alt={recipe.title}
             className="w-full h-64 object-cover rounded-lg mb-6"
           />

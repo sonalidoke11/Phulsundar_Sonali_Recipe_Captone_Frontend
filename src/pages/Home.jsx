@@ -79,6 +79,15 @@ const Home = () => {
             key={recipe._id}
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
+            <img
+              src={
+                recipe.image
+                  ? `${import.meta.env.VITE_API_BASE_URL}/${recipe.image}`
+                  : ''
+              }
+              alt={recipe.title}
+              className="w-full h-32 object-cover rounded-t-lg"
+            />
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-800">{recipe.title}</h2>
               <p className="text-gray-600 mt-2 text-sm">{recipe.description || 'No description available'}</p>
