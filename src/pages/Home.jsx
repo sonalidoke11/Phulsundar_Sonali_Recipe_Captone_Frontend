@@ -46,7 +46,7 @@ const Home = () => {
           throw new Error('Failed to fetch recipes');
         }
         const data = await response.json();
-        const latestRecipes = data.slice(-3).reverse(); // Show the latest three recipes
+        const latestRecipes = data.slice(-4).reverse(); // Show the latest three recipes
         setRecipes(latestRecipes);
       } catch (error) {
         setError(error.message);
@@ -67,17 +67,29 @@ const Home = () => {
         />
       </div>
 
-      <h1 className="text-3xl font-bold mb-6 text-center">Discover Our Latest Recipes</h1>
+      {/* <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+          <p>"Food is the ultimate equalizer. It brings people together from all walks of life."</p>
+      </blockquote> */}
+
+      <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white text-center px-5 py-3">
+          <svg class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+          </svg>
+          <p>"Food is the ultimate equalizer. It brings people together from all walks of life."</p>
+      </blockquote>
+
+      <h1 className="text-3xl font-bold mb-6 text-center mt-10">Discover Our Latest Recipes</h1>
 
       {error && <p className="text-red-500 text-center">{error}</p>}
 
+
       {/* SHowing latest 3 Recipes in Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
         {recipes.map((recipe) => (
           <Link
             to={`/recipes/${recipe._id}`}
             key={recipe._id}
-            className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300  hover:bg-fuchsia-50"
           >
             <img
               src={

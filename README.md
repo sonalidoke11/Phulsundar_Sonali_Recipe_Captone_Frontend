@@ -1,8 +1,59 @@
-# React + Vite
+# Capstone Project Frontend
+    In this I have developed recipe application where I am showing,
+    
+1) Homepage
+    ### Header Section
+      - Navigation
+      - Sign in / Sign up functionality
+- Carousel to show shw random food images
+- Showing latest 4 recipes 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2) Recipes Page
+    - Shows all recipes listing in grid format.
 
-Currently, two official plugins are available:
+3) Recipe details Page
+    - Showing individual recipe with details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4) Sign Up Page
+    - Shows sign up form for user. so that he can create account and upload own recipes
+
+5) Login Page
+    - Shows login form for user so that he can login and start adding, updatig and deletinghis own recipes.
+
+6) Recipe Upload Page (For logged in user)
+    - Shows Recipe upload form only if user signed up and logged in 
+
+7) Using react hooks for state management
+
+     
+## Technologies
+1. React
+2. Vite
+3. Tailwind
+
+
+## Installation And dependencies
+1) To start react project 
+- npm create vite@latest
+- type y and enter
+- give project name (entire in small letter)
+- select react
+- select javascript
+- cd folder_name  (goto folder created)
+- npm i
+- npm run dev
+
+2) react-router-dom , cors
+
+## Third party API :
+https://unsplash.com/documentation
+
+## Styling :
+Used Tailwind css 
+https://tailwindcss.com/docs/installation
+
+## Links :
+https://www.geeksforgeeks.org/
+https://www.instructables.com/search/projects/cooking
+https://github.com/sonalidoke11/
+

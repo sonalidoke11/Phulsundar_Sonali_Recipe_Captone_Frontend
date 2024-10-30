@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ user, handleLogout }) => (
-  <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
+  <nav className="bg-yellow-500 text-white px-6 py-4 flex justify-between items-center">
     {/* LOGO POSITION */}
     <div className="text-lg font-bold">
       <Link to="/" className="hover:text-blue-200">
@@ -37,10 +37,10 @@ const Navbar = ({ user, handleLogout }) => (
         </div>
       ) : (
         <>
-          <Link to="/signin" className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500">
+          <Link to="/signin" className="px-4 py-2 bg-indigo-400 rounded hover:bg-blue-500">
             Sign In
           </Link>
-          <Link to="/signup" className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500">
+          <Link to="/signup" className="px-4 py-2 bg-indigo-400 rounded hover:bg-blue-500">
             Sign Up
           </Link>
         </>

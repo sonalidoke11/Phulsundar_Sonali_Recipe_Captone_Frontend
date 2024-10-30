@@ -61,7 +61,7 @@ const SignIn = ({ setUser }) => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded font-semibold"
+            className="w-full bg-indigo-400  hover:bg-blue-400 text-white py-2 rounded font-semibold"
           >
             Sign In
           </button>
